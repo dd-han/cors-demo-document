@@ -2,6 +2,8 @@
 
 因為 2017 HelloJS 結束前很多人反映有遇到 CORS 問題，所以藉此由這個專案跟其他幾個相關專案講解清楚這個到底是什麼。
 
+[錄影](https://www.youtube.com/watch?v=9XRX8uAYgKA)
+
 ## 相關資料
 
 [MDN 上的介紹](https://developer.mozilla.org/zh-TW/docs/Web/HTTP/Access_control_CORS)
@@ -32,12 +34,13 @@ chrome.exe --disable-web-security --user-data-dir
 
 (出處：[StackOverflow](https://stackoverflow.com/questions/3102819/disable-same-origin-policy-in-chrome))
 
-
 不過這頗弱的，開你的網站還要把瀏覽器安全性設定關閉。
+
+或許你可以編譯一個沒有 CORS 的瀏覽器，這樣省下了下參數的功夫，不過還是不太好用，瀏覽網站還要用特定瀏覽器...
 
 ## 正經地迴避方式
 
-既然是瀏覽器的功能，不要用瀏覽器就好啦。
+不過既然 CORS 是瀏覽器的功能，不要用瀏覽器就好啦。
 
 ### 直接在 Server 中把資料挖回來。
 
